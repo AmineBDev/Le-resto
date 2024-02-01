@@ -308,7 +308,7 @@ header .header-container p {
 }
 .section3 .reservation .book {
   background: rgb(233, 233, 233);
-  padding: 80px 60px;
+  padding: 80px 0;
 }
 .section3 .reservation .book h3 {
   font-family: "allura", sans-serif;
@@ -328,10 +328,30 @@ header .header-container p {
   margin: 40px 0;
 }
 .section3 .reservation .book form {
+  width: 80%;
+  margin: 0 auto;
+}
+.section3 .reservation .book form .input-area {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 20px;
 }
-.section3 .reservation .book form input, .section3 .reservation .book form select {
+.section3 .reservation .book form .input-area input, .section3 .reservation .book form .input-area select {
   background: none;
   border: none;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  padding: 10px 0;
+}
+.section3 .reservation .book form button {
+  margin-top: 40px;
+  background: rgb(31, 31, 31);
+  color: rgb(233, 233, 233);
+  padding: 15px 40px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
