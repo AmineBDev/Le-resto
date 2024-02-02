@@ -297,7 +297,8 @@ header .header-container p {
   text-transform: uppercase;
   font-family: poppins, sans-serif;
 }
-.section3 .reservation .schedules .schedules-container .time-title, .section3 .reservation .schedules .schedules-container h2 {
+.section3 .reservation .schedules .schedules-container .time-title,
+.section3 .reservation .schedules .schedules-container h2 {
   line-height: 20px;
 }
 .section3 .reservation .schedules .schedules-container img {
@@ -321,7 +322,8 @@ header .header-container p {
   font-weight: bold;
   font-size: 2rem;
 }
-.section3 .reservation .book h3, .section3 .reservation .book h2 {
+.section3 .reservation .book h3,
+.section3 .reservation .book h2 {
   line-height: 30px;
 }
 .section3 .reservation .book img {
@@ -337,7 +339,8 @@ header .header-container p {
   grid-template-rows: 1fr 1fr;
   gap: 20px;
 }
-.section3 .reservation .book form .input-area input, .section3 .reservation .book form .input-area select {
+.section3 .reservation .book form .input-area input,
+.section3 .reservation .book form .input-area select {
   background: none;
   border: none;
   border-bottom: 1px solid rgb(194, 194, 194);
@@ -354,4 +357,147 @@ header .header-container p {
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
+}
+.section3 .events {
+  text-align: center;
+}
+.section3 .events .events-title {
+  margin: 100px 0 30px;
+}
+.section3 .events .events-title h3 {
+  font-family: "allura", sans-serif;
+  color: rgb(161, 127, 64);
+  font-size: 2.2rem;
+}
+.section3 .events .events-title h2 {
+  font-family: poppins, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: rgb(233, 233, 233);
+}
+.section3 .events .events-title h3,
+.section3 .events .events-title h2 {
+  line-height: 35px;
+}
+.section3 .events .events-title img {
+  margin-top: 30px;
+}
+.section3 .events .events-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.section3 .events .events-container h3 {
+  font-family: poppins, sans-serif;
+  font-weight: lighter;
+  font-size: 1.4rem;
+  padding: 0 20px;
+}
+.section3 .events .events-container h4 {
+  font-family: poppins, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin: 0 10px 20px;
+}
+.section3 .events .events-container .events-left .events-left-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin: 20px;
+}
+.section3 .events .events-container .events-left .events-left-container div:nth-child(2) {
+  background: rgb(233, 233, 233);
+  text-align: left;
+  padding: 35px 10px;
+}
+.section3 .events .events-container .events-left .events-left-container div:nth-child(2) div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  color: rgb(173, 173, 173);
+  letter-spacing: 1px;
+}
+.section3 .events .events-container .events-left .events-left-container .img-left1 {
+  background: url(../../img/event-01.jpg) center/cover;
+  height: 100%;
+}
+.section3 .events .events-container .events-left .events-left-container .img-left2 {
+  background: url(../../img/event-02.jpg) center/cover;
+  height: 100%;
+}
+.section3 .events .events-container .events-left .events-left-container .img-left1, .section3 .events .events-container .events-left .events-left-container .img-left2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section3 .events .events-container .events-left .events-left-container .elc {
+  background: rgb(31, 31, 31);
+  color: rgb(233, 233, 233);
+  padding: 20px 25px;
+}
+.section3 .events .events-container .events-left .events-left-container .elc p {
+  line-height: 25px;
+}
+.section3 .events .events-container .events-left .events-left-container .elc p:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.section3 .events .events-container .events-right {
+  margin: 20px;
+  background: url(../../img/event-03.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section3 .events .events-container .events-right .events-right-container {
+  background: rgb(233, 233, 233);
+  height: 85%;
+  width: 85%;
+}
+.section3 .events .events-container .events-right .events-right-container div:nth-child(2) {
+  background: rgb(233, 233, 233);
+}
+.section3 .events .events-container .events-right .events-right-container div:nth-child(2) h3 {
+  line-height: 25px;
+}
+.section3 .events .events-container .events-right .events-right-container div:nth-child(2) div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  color: rgb(173, 173, 173);
+  letter-spacing: 1px;
+  margin: 25px 0 80px;
+}
+.section3 .events .events-container .events-right .events-right-container .elc {
+  background: rgb(31, 31, 31);
+  color: rgb(233, 233, 233);
+  padding: 20px 25px;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.section3 .events .events-container .events-right .events-right-container .elc p {
+  line-height: 25px;
+}
+.section3 .events .events-container .events-right .events-right-container .elc p:first-child {
+  font-size: 2rem;
+  font-weight: bold;
 }/*# sourceMappingURL=index.css.map */
