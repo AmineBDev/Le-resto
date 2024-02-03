@@ -3,6 +3,10 @@
     display: grid;
     grid-template-columns: 50% 50%;
 
+    @media screen and (max-width: 840px) {
+        display: block;                
+    }
+
     .left1 {
         display: flex;
         justify-content: center;
@@ -11,7 +15,20 @@
         border: 1px dashed $color1;
         margin: 20px;
 
-        .left1-container {
+        @media screen and (max-width: 840px) {
+            border: none;
+            margin: 0;
+            padding: 30px;         
+        }
+
+        
+
+        .left1-container { 
+            @media screen and (max-width: 840px) {
+                border: 1px dashed $color1; 
+                padding: 30px;        
+            }        
+
 
             h3 {
                 @include title;
@@ -51,6 +68,9 @@
     }
 
     .right1 {
+        @media screen and (max-width: 840px) {
+            display: none;                
+        }
         .img-right {
             height: 550px;
             width: 100%;

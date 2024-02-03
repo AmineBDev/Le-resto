@@ -53,6 +53,11 @@ header nav {
   font-family: poppins, sans-serif;
   padding: 30px 0;
 }
+@media screen and (max-width: 870px) {
+  header nav {
+    width: 60%;
+  }
+}
 header nav h3 {
   font-family: allura, sans-serif;
   font-size: 3rem;
@@ -71,6 +76,11 @@ header nav ul li {
 }
 header nav .navbar {
   width: 70%;
+}
+@media screen and (max-width: 870px) {
+  header nav .navbar {
+    display: none;
+  }
 }
 header nav .links {
   width: 7%;
@@ -93,6 +103,7 @@ header .header-container {
       -ms-flex-pack: center;
           justify-content: center;
   height: 68%;
+  text-align: center;
 }
 header .header-container h2 {
   font-family: "allura", sans-serif;
@@ -100,12 +111,22 @@ header .header-container h2 {
   font-size: 3rem;
   letter-spacing: 5px;
 }
+@media screen and (max-width: 870px) {
+  header .header-container h2 {
+    font-size: 2rem;
+  }
+}
 header .header-container h1 {
   font-family: poppins, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 3.8rem;
   letter-spacing: 10px;
+}
+@media screen and (max-width: 460px) {
+  header .header-container h1 {
+    font-size: 2.4rem;
+  }
 }
 header .header-container h2, header .header-container h1 {
   line-height: 45px;
@@ -118,11 +139,22 @@ header .header-container p {
   text-transform: uppercase;
   letter-spacing: 7px;
 }
+@media screen and (max-width: 870px) {
+  header .header-container p {
+    text-align: center;
+    width: 70%;
+  }
+}
 
 .section1 {
   background: rgb(233, 233, 233);
   display: grid;
   grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 840px) {
+  .section1 {
+    display: block;
+  }
 }
 .section1 .left1 {
   display: -webkit-box;
@@ -137,6 +169,19 @@ header .header-container p {
   text-align: center;
   border: 1px dashed rgb(161, 127, 64);
   margin: 20px;
+}
+@media screen and (max-width: 840px) {
+  .section1 .left1 {
+    border: none;
+    margin: 0;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .section1 .left1 .left1-container {
+    border: 1px dashed rgb(161, 127, 64);
+    padding: 30px;
+  }
 }
 .section1 .left1 .left1-container h3 {
   font-family: "allura", sans-serif;
@@ -173,6 +218,11 @@ header .header-container p {
   font-family: poppins, sans-serif;
   letter-spacing: 2px;
 }
+@media screen and (max-width: 840px) {
+  .section1 .right1 {
+    display: none;
+  }
+}
 .section1 .right1 .img-right {
   height: 550px;
   width: 100%;
@@ -202,6 +252,11 @@ header .header-container p {
   margin: 40px auto;
   font-family: poppins, sans-serif;
 }
+@media screen and (max-width: 1366px) {
+  .section2 .menus ul {
+    width: 80%;
+  }
+}
 .section2 .menus ul li {
   border-bottom: 1px solid;
   padding-bottom: 5px;
@@ -220,9 +275,39 @@ header .header-container p {
   position: relative;
   top: -150px;
 }
+@media screen and (max-width: 1366px) {
+  .section2 .bg-meal .meal {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 845px) {
+  .section2 .bg-meal .meal {
+    display: block;
+  }
+}
 .section2 .bg-meal .meal .meal-container {
   padding: 20px;
   border-top: 5px solid rgb(161, 127, 64);
+}
+@media screen and (max-width: 845px) {
+  .section2 .bg-meal .meal .meal-container {
+    border: none;
+  }
+}
+@media screen and (max-width: 410px) {
+  .section2 .bg-meal .meal .meal-container {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 845px) {
+  .section2 .bg-meal .meal .meal-container:first-child {
+    border-top: 5px solid rgb(161, 127, 64);
+  }
+}
+@media screen and (max-width: 845px) {
+  .section2 .bg-meal .meal .meal-container:last-child {
+    padding-top: 0;
+  }
 }
 .section2 .bg-meal .meal .meal-container div {
   display: -webkit-box;
@@ -253,8 +338,18 @@ header .header-container p {
   font-size: 0.9rem;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 410px) {
+  .section2 .bg-meal .meal .meal-container div div:nth-of-type(2) p:first-child {
+    font-size: 0.8rem;
+  }
+}
 .section2 .bg-meal .meal .meal-container div div:nth-of-type(2) p:last-child {
   font-size: 1.1rem;
+}
+@media screen and (max-width: 410px) {
+  .section2 .bg-meal .meal .meal-container div div:nth-of-type(2) p:last-child {
+    font-size: 1rem;
+  }
 }
 .section2 .bg-meal .meal .meal-container div div:last-of-type {
   font-family: poppins, sans-serif;
@@ -262,6 +357,11 @@ header .header-container p {
 }
 .section2 .bg-meal .meal .meal-container img {
   border-radius: 50%;
+}
+@media screen and (max-width: 410px) {
+  .section2 .bg-meal .meal .meal-container img {
+    height: 70px;
+  }
 }
 
 .section3 {
