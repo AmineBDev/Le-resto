@@ -65,6 +65,12 @@ footer {
             background: none;
             border: 1px solid rgba(119, 88, 29, 0.123);
             padding: 5px;
+            outline: none;
+            transition: 0.3s;
+
+            &:focus {
+                border: 1px solid $white;
+            }
         }
 
         div {
@@ -80,7 +86,16 @@ footer {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 30px;
+            gap: 30px;         
+
+            li {
+            cursor: pointer;
+            transition: 0.3s;
+                &:hover {
+                    transform: scale(1.1);     
+                    color: $white;               
+                }
+            }
         }
     }
 }

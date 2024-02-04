@@ -29,6 +29,11 @@
                 border-bottom: 1px solid;
                 padding-bottom: 5px;
                 cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $color1;
+                }
             }
         }
         

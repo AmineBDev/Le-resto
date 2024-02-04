@@ -12,6 +12,8 @@ header {
         font-family: poppins, sans-serif;
         padding: 30px 0;
 
+        
+
         @media screen and (max-width: 870px) {
             width: 100%;
             padding: 20px;                
@@ -20,6 +22,11 @@ header {
         h3 {
             font-family: allura,sans-serif;
             font-size: 3rem;
+            transition: 0.3s;
+
+            &:hover {
+                color: $color1;
+            }
         }
 
         ul {
@@ -29,6 +36,12 @@ header {
 
             li {
                 cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $color1;
+                    transform: scale(1.1);
+                }
             }
         }
 
