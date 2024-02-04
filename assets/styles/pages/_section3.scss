@@ -2,11 +2,21 @@
     width: 65%;
     margin: 60px auto 0;
 
+    @media screen and (max-width: 845px) {
+        width: 85%;                              
+    }
+
     .reservation {
         display: grid;
         grid-template-columns: 30% 70%;
         text-align: center;
         background: black;
+
+        
+
+        @media screen and (max-width: 1515px) {
+            display: block;
+        }
 
         .schedules {
             background: black;
@@ -14,8 +24,24 @@
             border: 1px dashed $white;
             margin: 20px;
 
+            @media screen and (max-width: 1510px) {
+                margin: 0;
+                border: none;   
+                padding: 30px;                 
+            }
+
             .schedules-container {
                 margin: 30px 0;
+
+                @media screen and (max-width: 1510px) {
+                    border: 1px dashed $white;
+                    padding: 30px; 
+                    margin: 0;                             
+                }
+                @media screen and (max-width: 340px) {
+                    padding: 20px;                              
+                }
+
 
                 h3 {
                     color: $color1;
@@ -84,6 +110,14 @@
                     grid-template-rows: 1fr 1fr;
                     gap: 20px;
 
+                    @media screen and (max-width: 1510px) {
+                        grid-template-columns: 1fr 1fr;                
+                    }
+
+                    @media screen and (max-width: 990px) {
+                        grid-template-columns: 1fr;                
+                    }
+
                     input,
                     select {
                         background: none;
@@ -111,6 +145,10 @@
 
     .events {
         text-align: center;
+
+        @media screen and (max-width: 1330px) {
+            display: none;                              
+        }
 
         .events-title {
             margin: 100px 0 30px;
@@ -141,7 +179,6 @@
             display: grid;
             grid-template-columns: 60% 40%;
 
-            
 
                 h3 {
                     font-family: poppins,sans-serif;

@@ -11,6 +11,13 @@
         position: relative;
         top: -180px;
 
+        @media screen and (max-width: 1220px) {
+            top: -250px;                              
+        }
+        @media screen and (max-width: 340px) {
+            width: 85%;                              
+        }
+
         img {
             border-radius: 50%;
             height: 70px;
