@@ -4,7 +4,7 @@
     grid-template-columns: 50% 50%;
 
     @media screen and (max-width: 840px) {
-        display: block;                
+        grid-template-columns: 1fr;               
     }
 
     .left1 {
@@ -14,21 +14,10 @@
         text-align: center;
         border: 1px dashed $color1;
         margin: 20px;
-
-        @media screen and (max-width: 840px) {
-            border: none;
-            margin: 0;
-            padding: 30px;         
-        }
-
+        padding: 50px 5px;
         
 
         .left1-container { 
-            @media screen and (max-width: 840px) {
-                border: 1px dashed $color1; 
-                padding: 30px;        
-            }        
-
 
             h3 {
                 @include title;
@@ -66,17 +55,12 @@
             }
         }
     }
-
-    .right1 {
-        @media screen and (max-width: 840px) {
-            display: none;                
-        }
+        
         .img-right {
-            height: 550px;
-            width: 100%;
-            background-image: url(../../img/store-01.jpg);
-            background-size: cover;
-            background-position: center;
+            background: url(../../img/store-01.jpg) center/cover;
+
+           @media screen and (max-width: 840px) {
+                display: none;                
+            } 
         }
-    }
 }

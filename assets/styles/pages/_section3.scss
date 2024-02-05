@@ -15,7 +15,7 @@
         
 
         @media screen and (max-width: 1515px) {
-            display: block;
+            grid-template-columns: 1fr;
         }
 
         .schedules {
@@ -24,20 +24,9 @@
             border: 1px dashed $white;
             margin: 20px;
 
-            @media screen and (max-width: 1510px) {
-                margin: 0;
-                border: none;   
-                padding: 30px;                 
-            }
-
             .schedules-container {
                 margin: 30px 0;
-
-                @media screen and (max-width: 1510px) {
-                    border: 1px dashed $white;
-                    padding: 30px; 
-                    margin: 0;                             
-                }
+                
                 @media screen and (max-width: 340px) {
                     padding: 20px;                              
                 }
@@ -144,6 +133,7 @@
 
                     &:hover {
                         transform: scale(1.05);
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.479);
                     }
                 }
             }
@@ -223,12 +213,10 @@
                     }
                     
                     .img-left1 {
-                        background: url(../../img/event-01.jpg) center/cover;
-                        height: 100%;  
+                        background: url(../../img/event-01.jpg) center/cover;  
                     }
                     .img-left2 {
                         background: url(../../img/event-02.jpg) center/cover;
-                        height: 100%;
                     }
 
                     .img-left1, .img-left2 {
